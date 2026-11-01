@@ -1,0 +1,139 @@
+{
+  "project": "Customer Churn Prediction - Predictive Analytics & AI Model Deployment",
+  "dataset": "customer_churn.csv",
+  "rows": 7043,
+  "features_before_engineering": 19,
+  "positive_rate": 0.2653698707936959,
+  "selection_metric": "mean cross-validation PR-AUC",
+  "best_model": "Logistic Regression",
+  "final_metrics": {
+    "accuracy": 0.7679205110007097,
+    "balanced_accuracy": 0.7583559378955798,
+    "precision": 0.5465346534653466,
+    "recall": 0.7379679144385026,
+    "f1": 0.6279863481228669,
+    "roc_auc": 0.8425146606732284,
+    "pr_auc": 0.637119404332333,
+    "mcc": 0.4758000845985793,
+    "threshold": 0.5700000000000001,
+    "confusion_matrix": [
+      [
+        806,
+        229
+      ],
+      [
+        98,
+        276
+      ]
+    ],
+    "classification_report": {
+      "No Churn": {
+        "precision": 0.8915929203539823,
+        "recall": 0.778743961352657,
+        "f1-score": 0.8313563692625064,
+        "support": 1035.0
+      },
+      "Churn": {
+        "precision": 0.5465346534653466,
+        "recall": 0.7379679144385026,
+        "f1-score": 0.6279863481228669,
+        "support": 374.0
+      },
+      "accuracy": 0.7679205110007097,
+      "macro avg": {
+        "precision": 0.7190637869096644,
+        "recall": 0.7583559378955798,
+        "f1-score": 0.7296713586926866,
+        "support": 1409.0
+      },
+      "weighted avg": {
+        "precision": 0.800001868674529,
+        "recall": 0.7679205110007097,
+        "f1-score": 0.7773745467598626,
+        "support": 1409.0
+      }
+    }
+  },
+  "models": [
+    {
+      "model": "Logistic Regression",
+      "cv_pr_auc_mean": 0.6638133289964134,
+      "cv_pr_auc_std": 0.005101586687330669,
+      "accuracy": 0.7338537970191625,
+      "balanced_accuracy": 0.7522436642641246,
+      "precision": 0.4991568296795953,
+      "recall": 0.7914438502673797,
+      "f1": 0.6122026887280249,
+      "roc_auc": 0.8425146606732284,
+      "pr_auc": 0.637119404332333,
+      "mcc": 0.4512152945761372,
+      "training_seconds": 0.625
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_pr_auc_mean": 0.6633500398025528,
+      "cv_pr_auc_std": 0.009724259965472005,
+      "accuracy": 0.8005677785663591,
+      "balanced_accuracy": 0.7080045984138056,
+      "precision": 0.6608996539792388,
+      "recall": 0.5106951871657754,
+      "f1": 0.5761689291101055,
+      "roc_auc": 0.8458433439251853,
+      "pr_auc": 0.6652672153194585,
+      "mcc": 0.4549367021555643,
+      "training_seconds": 7.808
+    },
+    {
+      "model": "Neural Network (MLP)",
+      "cv_pr_auc_mean": 0.6485969569117719,
+      "cv_pr_auc_std": 0.012327365231165132,
+      "accuracy": 0.8019872249822569,
+      "balanced_accuracy": 0.7029941357307087,
+      "precision": 0.673992673992674,
+      "recall": 0.4919786096256685,
+      "f1": 0.5687789799072643,
+      "roc_auc": 0.8407037123149655,
+      "pr_auc": 0.626095351525108,
+      "mcc": 0.4535748590407708,
+      "training_seconds": 4.096
+    },
+    {
+      "model": "Random Forest",
+      "cv_pr_auc_mean": 0.6412186259587656,
+      "cv_pr_auc_std": 0.013712344041466538,
+      "accuracy": 0.7622427253371186,
+      "balanced_accuracy": 0.7425379110801106,
+      "precision": 0.5402061855670103,
+      "recall": 0.7005347593582888,
+      "f1": 0.610011641443539,
+      "roc_auc": 0.8349763620863365,
+      "pr_auc": 0.6368342917734731,
+      "mcc": 0.45082578702554316,
+      "training_seconds": 2.965
+    },
+    {
+      "model": "Extra Trees",
+      "cv_pr_auc_mean": 0.6196452398045535,
+      "cv_pr_auc_std": 0.01397350541117754,
+      "accuracy": 0.7608232789212207,
+      "balanced_accuracy": 0.7279108217727144,
+      "precision": 0.5406593406593406,
+      "recall": 0.6577540106951871,
+      "f1": 0.5934861278648975,
+      "roc_auc": 0.8263943785682915,
+      "pr_auc": 0.626015180858268,
+      "mcc": 0.43044833574564106,
+      "training_seconds": 3.321
+    }
+  ],
+  "feature_engineering": [
+    "tenure_years",
+    "tenure_group",
+    "avg_charge_per_month",
+    "number_of_services",
+    "is_month_to_month",
+    "uses_electronic_check",
+    "has_internet"
+  ],
+  "dataset_sha256": "16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91"
+}
